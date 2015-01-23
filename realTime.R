@@ -194,10 +194,13 @@ functionSelection = function(){
 	tkpack(tkbutton(analysisframe1,text='ds.histogram',command=rt.ds.histogram),side='left', pady=c(10,10) , padx=c(5,5))
 	tkpack(tkbutton(analysisframe1,text='ds.colnames',command=rt.ds.colnames),side='left', pady=c(10,10) , padx=c(5,10))
 
+        analysisframe2 = tkframe(analysisframe)
+	tkpack(tkbutton(analysisframe2,text='ds.quantileMean',command=rt.ds.quantileMean),side='left', pady=c(10,10) , padx=c(10,5))
 	
 	tkpack(analysisframe)
 	tkpack(analysisframe0)
 	tkpack(analysisframe1)
+	tkpack(analysisframe2)
 
 	######## ASSIGN FUNCTION BUTTONS ########
 
