@@ -191,7 +191,8 @@ functionSelection = function(){
         analysisframe1 = tkframe(analysisframe)
 	tkpack(tkbutton(analysisframe1,text='ds.mean',command=rt.ds.mean),side='left', pady=c(10,10) , padx=c(10,5))
 	tkpack(tkbutton(analysisframe1,text='ds.table2D',command=rt.ds.table2D),side='left', pady=c(10,10) , padx=c(5,5))
-	tkpack(tkbutton(analysisframe1,text='ds.histogram',command=rt.ds.histogram),side='left', pady=c(10,10) , padx=c(5,10))
+	tkpack(tkbutton(analysisframe1,text='ds.histogram',command=rt.ds.histogram),side='left', pady=c(10,10) , padx=c(5,5))
+	tkpack(tkbutton(analysisframe1,text='ds.colnames',command=rt.ds.colnames),side='left', pady=c(10,10) , padx=c(5,10))
 
 	
 	tkpack(analysisframe)
