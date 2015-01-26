@@ -68,6 +68,28 @@ rTLogin = function(){
 				eval(parse(text = dataToWrite[i]))
 			}
 
+
+			##### GET VARIABLES FROM SERVER #####
+			cat("\nFetching List of variables from server...\n")
+
+			# get the names of the variables
+			varnames <- unique(unlist(ds.colnames('D')))
+
+			# get variables types
+			types <- c()
+			for(i in 1:length(varnames)){
+				t <- unique(unlist(ds.class(paste0('D$', varnames[i]))))
+				types <- append(types, t)
+			}
+
+			# create the output table
+			table2display <- data.frame(varnames,types)
+			colnames(table2display) <- c("Name", "Type")
+
+			print(table2display)
+			cat("\nVariables List Fetched From Server\n")
+
+			##### continue with real time analysis #####
 			functionSelection()
 			
 
