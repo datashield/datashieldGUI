@@ -113,11 +113,17 @@ datashieldPackageInstaller = function(){
 		}
 	}
 
-        # Function called when user pressed create analysis
+        # Function called when user pressed back
         mainMenu = function(...){
                 destroydspackageinstaller() # Destroy menu window
 		runGUI()
         }
+
+        # Restart function
+        restart = function(...){
+                destroydspackageinstaller() # Destroy menu window
+		source("gui.R")
+	}
 
 
         # Destroy Window function
@@ -143,7 +149,8 @@ datashieldPackageInstaller = function(){
         tkpack(tkbutton(optionframe1,text=' dsGraphicsClient',command=installGraphics),side='left',pady=c(5,5) , padx=c(10,10))
         tkpack(tkbutton(optionframe2,text='dsModellingClient',command=installModelling),side='left',pady=c(5,5) , padx=c(10,10))
         tkpack(tkbutton(optionframe3,text='  dsStatsClient  ',command=installStats),side='left',pady=c(5,10) , padx=c(10,10))
-        tkpack(tkbutton(optionframe4,text='Back',command=mainMenu),side='left',pady=c(5,5) , padx=c(10,10))
+        tkpack(tkbutton(optionframe4,text='Back',command=mainMenu),side='left',pady=c(5,5) , padx=c(10,5))
+        tkpack(tkbutton(optionframe4,text='Restart',command=restart),side='left',pady=c(5,5) , padx=c(5,10))
 
         tkpack(optionframeA)
         tkpack(optionframe0)
