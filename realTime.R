@@ -197,6 +197,7 @@ functionSelection = function(){
         analysisframe2 = tkframe(analysisframe)
 	tkpack(tkbutton(analysisframe2,text='ds.quantileMean',command=rt.ds.quantileMean),side='left', pady=c(10,10) , padx=c(10,5))
 	tkpack(tkbutton(analysisframe2,text='ds.summary',command=rt.ds.summary),side='left', pady=c(10,10) , padx=c(5,5))
+	tkpack(tkbutton(analysisframe2,text='ds.contourPlot',command=rt.ds.contourPlot),side='left', pady=c(10,10) , padx=c(5,5))
 	tkpack(tkbutton(analysisframe2,text='ds.table1D',command=rt.ds.table1D),side='left', pady=c(10,10) , padx=c(5,10))
 	
 	tkpack(analysisframe)
