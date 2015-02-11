@@ -189,22 +189,25 @@ functionSelection = function(){
         tkpack(tklabel(analysisframe0,text='Analysis', width=20),side='left')
 
         analysisframe1 = tkframe(analysisframe)
-	tkpack(tkbutton(analysisframe1,text='ds.mean',command=rt.ds.mean),side='left', pady=c(10,10) , padx=c(10,5))
-	tkpack(tkbutton(analysisframe1,text='ds.table2D',command=rt.ds.table2D),side='left', pady=c(10,10) , padx=c(5,5))
-	tkpack(tkbutton(analysisframe1,text='ds.histogram',command=rt.ds.histogram),side='left', pady=c(10,10) , padx=c(5,5))
-	tkpack(tkbutton(analysisframe1,text='ds.colnames',command=rt.ds.colnames),side='left', pady=c(10,10) , padx=c(5,10))
+	tkpack(tkbutton(analysisframe1,text='ds.summary',command=rt.ds.summary),side='left', pady=c(10,10) , padx=c(10,5))
+	tkpack(tkbutton(analysisframe1,text='ds.mean',command=rt.ds.mean),side='left', pady=c(10,10) , padx=c(5,5))
+	tkpack(tkbutton(analysisframe1,text='ds.quantileMean',command=rt.ds.quantileMean),side='left', pady=c(10,10) , padx=c(5,10))
 
         analysisframe2 = tkframe(analysisframe)
-	tkpack(tkbutton(analysisframe2,text='ds.quantileMean',command=rt.ds.quantileMean),side='left', pady=c(10,10) , padx=c(10,5))
-	tkpack(tkbutton(analysisframe2,text='ds.summary',command=rt.ds.summary),side='left', pady=c(10,10) , padx=c(5,5))
-	tkpack(tkbutton(analysisframe2,text='ds.heatmapPlot',command=rt.ds.heatmapPlot),side='left', pady=c(10,10) , padx=c(5,5))
-	tkpack(tkbutton(analysisframe2,text='ds.contourPlot',command=rt.ds.contourPlot),side='left', pady=c(10,10) , padx=c(5,5))
-	tkpack(tkbutton(analysisframe2,text='ds.table1D',command=rt.ds.table1D),side='left', pady=c(10,10) , padx=c(5,10))
+	tkpack(tkbutton(analysisframe2,text='ds.colnames',command=rt.ds.colnames),side='left', pady=c(10,10) , padx=c(10,5))
+	tkpack(tkbutton(analysisframe2,text='ds.table1D',command=rt.ds.table1D),side='left', pady=c(10,10) , padx=c(5,5))
+	tkpack(tkbutton(analysisframe2,text='ds.table2D',command=rt.ds.table2D),side='left', pady=c(10,10) , padx=c(5,10))
 	
+        analysisframe3 = tkframe(analysisframe)
+	tkpack(tkbutton(analysisframe3,text='ds.histogram',command=rt.ds.histogram),side='left', pady=c(10,10) , padx=c(10,5))
+	tkpack(tkbutton(analysisframe3,text='ds.heatmapPlot',command=rt.ds.heatmapPlot),side='left', pady=c(10,10) , padx=c(5,5))
+	tkpack(tkbutton(analysisframe3,text='ds.contourPlot',command=rt.ds.contourPlot),side='left', pady=c(10,10) , padx=c(5,10))
+
 	tkpack(analysisframe)
 	tkpack(analysisframe0)
 	tkpack(analysisframe1)
 	tkpack(analysisframe2)
+	tkpack(analysisframe3)
 
 	######## ASSIGN FUNCTION BUTTONS ########
 
