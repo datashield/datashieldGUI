@@ -6,7 +6,7 @@ rt.ds.table2D = function(){
 		tkdestroy(window.ds.table2D)
 		x <- toString(tclvalue(xinput_))
 		y <- toString(tclvalue(yinput_))
-		type <- toString(tclvalue(typeinput_))
+		type <- toString(tclvalue(rbvalue))
 		print(eval(parse(text=   paste0("ds.table2D('", x , "','" , y , "','", type ,"')" , sep="")   )))
 	}
 
@@ -22,7 +22,7 @@ rt.ds.table2D = function(){
 
 	xinput_ = tclVar( 'D$LAB_HDL' )
 	yinput_ = tclVar( 'D$GENDER' )
-	typeinput_ = tclVar( 'combine' )
+	rbvalue <- tclVar( 'combine' )
 
 	inputframe1 = tkframe(window.ds.table2D)
 	tkpack(tklabel(inputframe1,text='X', width=20),side='left')
@@ -33,8 +33,14 @@ rt.ds.table2D = function(){
 	tkpack(tkentry(inputframe2,width=30,textvariable=yinput_), side='left', pady=c(2,2), padx=c(2,5))
 
 	inputframe3 = tkframe(window.ds.table2D)
-	tkpack(tklabel(inputframe3,text='Type', width=20),side='left')
-	tkpack(tkentry(inputframe3,width=30,textvariable=typeinput_), side='left', pady=c(2,2), padx=c(2,5))
+        rbsplt <- tkradiobutton(inputframe3)
+        rbcomb <- tkradiobutton(inputframe3)
+        tkconfigure(rbsplt, variable=rbvalue, value="split")
+        tkconfigure(rbcomb, variable=rbvalue, value="combine")
+	tkpack(tklabel(inputframe3,text='Split', width=10), side='left', pady=c(5,5), padx=c(10,5))
+        tkpack(rbsplt,side='left', pady=c(5,5), padx=c(5,5))
+	tkpack(tklabel(inputframe3,text='Combine', width=10), side='left', pady=c(5,5), padx=c(5,5))
+        tkpack(rbcomb,side='left', pady=c(5,5), padx=c(5,10))
 
 	tkpack(tkbutton(inputframe0,text='Execute',command=ex.ds.table2D),side='left', pady=c(10,10) , padx=c(10,5))
 	tkpack(tkbutton(inputframe0,text='Cancel',command=cl.ds.table2D),side='left', pady=c(10,10) , padx=c(5,10))
