@@ -205,6 +205,7 @@ functionSelection = function(){
 
         analysisframe4 = tkframe(analysisframe)
 	tkpack(tkbutton(analysisframe4,text='ds.class',command=rt.ds.class),side='left', pady=c(10,10) , padx=c(10,5))
+	tkpack(tkbutton(analysisframe4,text='ds.names',command=rt.ds.names),side='left', pady=c(10,10) , padx=c(5,5))
 
 	tkpack(analysisframe)
 	tkpack(analysisframe0)
