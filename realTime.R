@@ -203,11 +203,15 @@ functionSelection = function(){
 	tkpack(tkbutton(analysisframe3,text='ds.heatmapPlot',command=rt.ds.heatmapPlot),side='left', pady=c(10,10) , padx=c(5,5))
 	tkpack(tkbutton(analysisframe3,text='ds.contourPlot',command=rt.ds.contourPlot),side='left', pady=c(10,10) , padx=c(5,10))
 
+        analysisframe4 = tkframe(analysisframe)
+	tkpack(tkbutton(analysisframe4,text='ds.class',command=rt.ds.class),side='left', pady=c(10,10) , padx=c(10,5))
+
 	tkpack(analysisframe)
 	tkpack(analysisframe0)
 	tkpack(analysisframe1)
 	tkpack(analysisframe2)
 	tkpack(analysisframe3)
+	tkpack(analysisframe4)
 
 	######## ASSIGN FUNCTION BUTTONS ########
 
