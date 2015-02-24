@@ -208,12 +208,16 @@ functionSelection = function(){
 	tkpack(tkbutton(analysisframe4,text='ds.names',command=rt.ds.names),side='left', pady=c(10,10) , padx=c(5,5))
 	tkpack(tkbutton(analysisframe4,text='ds.dim',command=rt.ds.dim),side='left', pady=c(10,10) , padx=c(5,10))
 
+        analysisframe5 = tkframe(analysisframe)
+	tkpack(tkbutton(analysisframe5,text='ds.tTest',command=rt.ds.tTest),side='left', pady=c(10,10) , padx=c(10,5))
+
 	tkpack(analysisframe)
 	tkpack(analysisframe0)
 	tkpack(analysisframe1)
 	tkpack(analysisframe2)
 	tkpack(analysisframe3)
 	tkpack(analysisframe4)
+	tkpack(analysisframe5)
 
 	######## ASSIGN FUNCTION BUTTONS ########
 
