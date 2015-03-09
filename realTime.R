@@ -228,10 +228,13 @@ functionSelection = function(){
 	tkpack(tkbutton(assignframe1,text='ds.log',command=rt.ds.log),side='left', pady=c(10,10) , padx=c(10,5))
 	tkpack(tkbutton(assignframe1,text='ds.exp',command=rt.ds.exp),side='left', pady=c(10,10) , padx=c(5,5))
 
+        assignframe2 = tkframe(assignframe)
+	tkpack(tkbutton(assignframe2,text='ds.asCharacter',command=rt.ds.asCharacter),side='left', pady=c(10,10) , padx=c(10,5))
 
 	tkpack(assignframe)
 	tkpack(assignframe0)
 	tkpack(assignframe1)
+	tkpack(assignframe2)
 
 
 
