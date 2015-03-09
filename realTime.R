@@ -231,6 +231,7 @@ functionSelection = function(){
         assignframe2 = tkframe(assignframe)
 	tkpack(tkbutton(assignframe2,text='ds.asCharacter',command=rt.ds.asCharacter),side='left', pady=c(10,10) , padx=c(10,5))
 	tkpack(tkbutton(assignframe2,text='ds.asFactor',command=rt.ds.asFactor),side='left', pady=c(10,10) , padx=c(5,5))
+	tkpack(tkbutton(assignframe2,text='ds.asList',command=rt.ds.asList),side='left', pady=c(10,10) , padx=c(5,5))
 
 	tkpack(assignframe)
 	tkpack(assignframe0)
