@@ -216,6 +216,7 @@ functionSelection = function(){
         analysisframe5 = tkframe(analysisframe)
 	tkpack(tkbutton(analysisframe5,text='ds.tTest',command=rt.ds.tTest),side='left', pady=c(10,10) , padx=c(10,5))
 	tkpack(tkbutton(analysisframe5,text='ds.cor',command=rt.ds.cor),side='left', pady=c(10,10) , padx=c(5,5))
+	tkpack(tkbutton(analysisframe5,text='ds.corTest',command=rt.ds.corTest),side='left', pady=c(10,10) , padx=c(5,5))
 	tkpack(tkbutton(analysisframe5,text='ds.isNA',command=rt.ds.isNA),side='left', pady=c(10,10) , padx=c(5,5))
 	tkpack(tkbutton(analysisframe5,text='ds.isValid',command=rt.ds.isValid),side='left', pady=c(10,10) , padx=c(5,5))
 
