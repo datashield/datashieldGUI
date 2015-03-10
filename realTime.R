@@ -197,7 +197,6 @@ functionSelection = function(){
 
         analysisframe2 = tkframe(analysisframe)
 	tkpack(tkbutton(analysisframe2,text='ds.colnames',command=rt.ds.colnames),side='left', pady=c(10,10) , padx=c(10,5))
-	tkpack(tkbutton(analysisframe2,text='ds.rowColCalc',command=rt.ds.rowColCalc),side='left', pady=c(10,10) , padx=c(5,5))
 	tkpack(tkbutton(analysisframe2,text='ds.table1D',command=rt.ds.table1D),side='left', pady=c(10,10) , padx=c(5,5))
 	tkpack(tkbutton(analysisframe2,text='ds.table2D',command=rt.ds.table2D),side='left', pady=c(10,10) , padx=c(5,10))
 	
@@ -209,7 +208,6 @@ functionSelection = function(){
         analysisframe4 = tkframe(analysisframe)
 	tkpack(tkbutton(analysisframe4,text='ds.class',command=rt.ds.class),side='left', pady=c(10,10) , padx=c(10,5))
 	tkpack(tkbutton(analysisframe4,text='ds.exists',command=rt.ds.exists),side='left', pady=c(10,10) , padx=c(5,5))
-	tkpack(tkbutton(analysisframe4,text='ds.names',command=rt.ds.names),side='left', pady=c(10,10) , padx=c(5,5))
 	tkpack(tkbutton(analysisframe4,text='ds.levels',command=rt.ds.levels),side='left', pady=c(10,10) , padx=c(5,5))
 	tkpack(tkbutton(analysisframe4,text='ds.dim',command=rt.ds.dim),side='left', pady=c(10,10) , padx=c(5,10))
 
@@ -220,7 +218,6 @@ functionSelection = function(){
 	tkpack(tkbutton(analysisframe5,text='ds.cor',command=rt.ds.cor),side='left', pady=c(10,10) , padx=c(5,5))
 	tkpack(tkbutton(analysisframe5,text='ds.corTest',command=rt.ds.corTest),side='left', pady=c(10,10) , padx=c(5,5))
 	tkpack(tkbutton(analysisframe5,text='ds.isNA',command=rt.ds.isNA),side='left', pady=c(10,10) , padx=c(5,5))
-	tkpack(tkbutton(analysisframe5,text='ds.isValid',command=rt.ds.isValid),side='left', pady=c(10,10) , padx=c(5,5))
 
 	tkpack(analysisframe)
 	tkpack(analysisframe0)
@@ -236,16 +233,11 @@ functionSelection = function(){
         tkpack(tklabel(assignframe0,text='Assign', width=20),side='left')
 
         assignframe1 = tkframe(assignframe)
-	tkpack(tkbutton(assignframe1,text='ds.assign',command=rt.ds.assign),side='left', pady=c(10,10) , padx=c(10,5))
 	tkpack(tkbutton(assignframe1,text='ds.log',command=rt.ds.log),side='left', pady=c(10,10) , padx=c(5,5))
 	tkpack(tkbutton(assignframe1,text='ds.exp',command=rt.ds.exp),side='left', pady=c(10,10) , padx=c(5,5))
 
         assignframe2 = tkframe(assignframe)
 	tkpack(tkbutton(assignframe2,text='ds.asCharacter',command=rt.ds.asCharacter),side='left', pady=c(10,10) , padx=c(10,5))
-	tkpack(tkbutton(assignframe2,text='ds.asFactor',command=rt.ds.asFactor),side='left', pady=c(10,10) , padx=c(5,5))
-	tkpack(tkbutton(assignframe2,text='ds.asList',command=rt.ds.asList),side='left', pady=c(10,10) , padx=c(5,5))
-	tkpack(tkbutton(assignframe2,text='ds.asMatrix',command=rt.ds.asMatrix),side='left', pady=c(10,10) , padx=c(5,5))
-	tkpack(tkbutton(assignframe2,text='ds.asNumeric',command=rt.ds.asNumeric),side='left', pady=c(10,10) , padx=c(5,10))
 
 	tkpack(assignframe)
 	tkpack(assignframe0)
