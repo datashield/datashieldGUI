@@ -197,6 +197,7 @@ functionSelection = function(){
 
         analysisframe2 = tkframe(analysisframe)
 	tkpack(tkbutton(analysisframe2,text='ds.colnames',command=rt.ds.colnames),side='left', pady=c(10,10) , padx=c(10,5))
+	tkpack(tkbutton(analysisframe2,text='ds.rowColCalc',command=rt.ds.rowColCalc),side='left', pady=c(10,10) , padx=c(5,5))
 	tkpack(tkbutton(analysisframe2,text='ds.table1D',command=rt.ds.table1D),side='left', pady=c(10,10) , padx=c(5,5))
 	tkpack(tkbutton(analysisframe2,text='ds.table2D',command=rt.ds.table2D),side='left', pady=c(10,10) , padx=c(5,10))
 	
