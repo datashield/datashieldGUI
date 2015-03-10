@@ -192,6 +192,7 @@ functionSelection = function(){
 	tkpack(tkbutton(analysisframe1,text='ds.summary',command=rt.ds.summary),side='left', pady=c(10,10) , padx=c(10,5))
 	tkpack(tkbutton(analysisframe1,text='ds.length',command=rt.ds.length),side='left', pady=c(10,10) , padx=c(5,5))
 	tkpack(tkbutton(analysisframe1,text='ds.mean',command=rt.ds.mean),side='left', pady=c(10,10) , padx=c(5,5))
+	tkpack(tkbutton(analysisframe1,text='ds.meanByClass',command=rt.ds.meanByClass),side='left', pady=c(10,10) , padx=c(5,5))
 	tkpack(tkbutton(analysisframe1,text='ds.quantileMean',command=rt.ds.quantileMean),side='left', pady=c(10,10) , padx=c(5,10))
 
         analysisframe2 = tkframe(analysisframe)
