@@ -210,7 +210,8 @@ functionSelection = function(){
 
         analysisframe5 = tkframe(analysisframe)
 	tkpack(tkbutton(analysisframe5,text='ds.table1D',command=rt.ds.table1D),side='left', pady=c(10,10) , padx=c(10,5))
-	tkpack(tkbutton(analysisframe5,text='ds.table2D',command=rt.ds.table2D),side='left', pady=c(10,10) , padx=c(5,10))
+	tkpack(tkbutton(analysisframe5,text='ds.table2D',command=rt.ds.table2D),side='left', pady=c(10,10) , padx=c(5,5))
+	tkpack(tkbutton(analysisframe5,text='ds.subset',command=rt.ds.subset),side='left', pady=c(10,10) , padx=c(5,10))
 	
         analysisframe6 = tkframe(analysisframe)
 	tkpack(tkbutton(analysisframe6,text='ds.histogram',command=rt.ds.histogram),side='left', pady=c(10,10) , padx=c(10,5))
