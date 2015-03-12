@@ -227,6 +227,10 @@ functionSelection = function(){
 	tkpack(tkbutton(analysisframe7,text='ds.corTest',command=rt.ds.corTest),side='left', pady=c(10,10) , padx=c(5,5))
 	tkpack(tkbutton(analysisframe7,text='ds.var',command=rt.ds.var),side='left', pady=c(10,10) , padx=c(5,10))
 
+        analysisframe8 = tkframe(analysisframe)
+	tkpack(tkbutton(analysisframe8,text='ds.glm',command=rt.ds.glm),side='left', pady=c(10,10) , padx=c(10,5))
+	tkpack(tkbutton(analysisframe8,text='ds.gee',command=rt.ds.gee),side='left', pady=c(10,10) , padx=c(5,10))
+
 	tkpack(analysisframe)
 	tkpack(analysisframe0)
 	tkpack(analysisframe1)
@@ -236,6 +240,7 @@ functionSelection = function(){
 	tkpack(analysisframe5)
 	tkpack(analysisframe6)
 	tkpack(analysisframe7)
+	tkpack(analysisframe8)
 
 
 
