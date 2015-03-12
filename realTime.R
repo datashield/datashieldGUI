@@ -229,6 +229,7 @@ functionSelection = function(){
 
         analysisframe8 = tkframe(analysisframe)
 	tkpack(tkbutton(analysisframe8,text='ds.glm',command=rt.ds.glm),side='left', pady=c(10,10) , padx=c(10,5))
+	tkpack(tkbutton(analysisframe8,text='ds.gee',command=rt.ds.gee),side='left', pady=c(10,10) , padx=c(5,10))
 
 	tkpack(analysisframe)
 	tkpack(analysisframe0)
