@@ -19,7 +19,7 @@ rt.ds.histogram = function(){
 	tkwm.title(window.ds.histogram,'ds.histogram()')
 	inputframe0 = tkframe(window.ds.histogram)
 
-	xinput_ = tclVar( 'D$LAB_HDL' )
+	xinput_ = tclVar( 'variable_name' )
 	rbvalue <- tclVar( 'combine' )
 
 	inputframe1 = tkframe(window.ds.histogram)

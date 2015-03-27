@@ -19,7 +19,7 @@ rt.ds.length = function(){
 	tkwm.title(window.ds.length,'ds.length()')
 	inputframe0 = tkframe(window.ds.length)
 
-	xinput_ = tclVar( 'D$LAB_HDL' )
+	xinput_ = tclVar( 'variable_name' )
 	rbvalue <- tclVar( 'combine' )
 
 	inputframe1 = tkframe(window.ds.length)

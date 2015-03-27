@@ -22,8 +22,8 @@ rt.ds.meanByClass = function(){
 	inputframe0 = tkframe(window.ds.meanByClass)
 
 	xinput_ = tclVar( 'D' )
-	outvarinput_ = tclVar( 'LAB_HDL' )
-	covarinput_ = tclVar( 'GENDER' )
+	outvarinput_ = tclVar( 'variable_name' )
+	covarinput_ = tclVar( 'variable_name' )
 	rbvalue <- tclVar( 'combine' )
 
 	inputframe1 = tkframe(window.ds.meanByClass)

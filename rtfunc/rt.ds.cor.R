@@ -19,8 +19,8 @@ rt.ds.cor = function(){
 	tkwm.title(window.ds.cor,'ds.cor()')
 	inputframe0 = tkframe(window.ds.cor)
 
-	xinput_ = tclVar( 'D$LAB_HDL' )
-	yinput_ = tclVar( 'D$LAB_TSC' )
+	xinput_ = tclVar( 'variable_name' )
+	yinput_ = tclVar( 'variable_name' )
 
 	inputframe1 = tkframe(window.ds.cor)
 	tkpack(tklabel(inputframe1,text='X', width=20),side='left')

@@ -19,7 +19,7 @@ rt.ds.mean = function(){
 	tkwm.title(window.ds.mean,'ds.mean()')
 	inputframe0 = tkframe(window.ds.mean)
 
-	xinput_ = tclVar( 'D$LAB_HDL' )
+	xinput_ = tclVar( 'variable_name' )
 	rbvalue <- tclVar( 'combine' )
 
 	inputframe1 = tkframe(window.ds.mean)

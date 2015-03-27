@@ -39,8 +39,8 @@ rt.ds.tTest = function(){
 	tkwm.title(window.ds.tTest,'ds.tTest()')
 	inputframe0 = tkframe(window.ds.tTest)
 
-	xinput_ = tclVar( 'D$LAB_HDL' )
-	yinput_ = tclVar( 'D$LAB_TSC' )
+	xinput_ = tclVar( 'variable_name' )
+	yinput_ = tclVar( 'variable_name' )
 	conflevel = tclVar( '0.95' )
 	typeRBvalue <- tclVar( 'combine' )
 	hypRBvalue <- tclVar( 'two.sided' )

@@ -19,7 +19,7 @@ rt.ds.asCharacter = function(){
 	tkwm.title(window.ds.asCharacter,'ds.asCharacter()')
 	inputframe0 = tkframe(window.ds.asCharacter)
 
-	xinput_ = tclVar( 'D$LAB_HDL' )
+	xinput_ = tclVar( 'variable_name' )
 	newobjinput_ = tclVar( 'new_obj' )
 
 	inputframe1 = tkframe(window.ds.asCharacter)

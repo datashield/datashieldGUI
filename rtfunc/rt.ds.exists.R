@@ -18,7 +18,7 @@ rt.ds.exists = function(){
 	tkwm.title(window.ds.exists,'ds.exists()')
 	inputframe0 = tkframe(window.ds.exists)
 
-	xinput_ = tclVar( 'D$LAB_HDL' )
+	xinput_ = tclVar( 'variable_name' )
 
 	inputframe1 = tkframe(window.ds.exists)
 	tkpack(tklabel(inputframe1,text='X', width=20),side='left')

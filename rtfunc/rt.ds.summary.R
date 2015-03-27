@@ -18,7 +18,7 @@ rt.ds.summary = function(){
 	tkwm.title(window.ds.summary,'ds.summary()')
 	inputframe0 = tkframe(window.ds.summary)
 
-	xinput_ = tclVar( 'D$LAB_HDL' )
+	xinput_ = tclVar( 'variable_name' )
 
 	inputframe1 = tkframe(window.ds.summary)
 	tkpack(tklabel(inputframe1,text='X', width=20),side='left')

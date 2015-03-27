@@ -19,8 +19,8 @@ rt.ds.cov = function(){
 	tkwm.title(window.ds.cov,'ds.cov()')
 	inputframe0 = tkframe(window.ds.cov)
 
-	xinput_ = tclVar( 'D$LAB_HDL' )
-	yinput_ = tclVar( 'D$LAB_TSC' )
+	xinput_ = tclVar( 'variable_name' )
+	yinput_ = tclVar( 'variable_name' )
 
 	inputframe1 = tkframe(window.ds.cov)
 	tkpack(tklabel(inputframe1,text='X', width=20),side='left')

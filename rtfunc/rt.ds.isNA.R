@@ -18,7 +18,7 @@ rt.ds.isNA = function(){
 	tkwm.title(window.ds.isNA,'ds.isNA()')
 	inputframe0 = tkframe(window.ds.isNA)
 
-	xinput_ = tclVar( 'D$LAB_HDL' )
+	xinput_ = tclVar( 'variable_name' )
 
 	inputframe1 = tkframe(window.ds.isNA)
 	tkpack(tklabel(inputframe1,text='X', width=20),side='left')

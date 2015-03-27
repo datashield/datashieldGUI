@@ -18,7 +18,7 @@ rt.ds.class = function(){
 	tkwm.title(window.ds.class,'ds.class()')
 	inputframe0 = tkframe(window.ds.class)
 
-	xinput_ = tclVar( 'D$LAB_HDL' )
+	xinput_ = tclVar( 'variable_name' )
 
 	inputframe1 = tkframe(window.ds.class)
 	tkpack(tklabel(inputframe1,text='X', width=20),side='left')

@@ -18,7 +18,7 @@ rt.ds.levels = function(){
 	tkwm.title(window.ds.levels,'ds.levels()')
 	inputframe0 = tkframe(window.ds.levels)
 
-	xinput_ = tclVar( 'D$PM_BMI_CATEGORICAL' )
+	xinput_ = tclVar( 'variable_name' )
 
 	inputframe1 = tkframe(window.ds.levels)
 	tkpack(tklabel(inputframe1,text='X', width=20),side='left')

@@ -19,7 +19,7 @@ rt.ds.quantileMean = function(){
 	tkwm.title(window.ds.quantileMean,'ds.quantileMean()')
 	inputframe0 = tkframe(window.ds.quantileMean)
 
-	xinput_ = tclVar( 'D$LAB_HDL' )
+	xinput_ = tclVar( 'variable_name' )
 	rbvalue <- tclVar( 'combine' )
 
 	inputframe1 = tkframe(window.ds.quantileMean)

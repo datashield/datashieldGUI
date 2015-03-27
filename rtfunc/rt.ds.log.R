@@ -20,7 +20,7 @@ rt.ds.log = function(){
 	tkwm.title(window.ds.log,'ds.log()')
 	inputframe0 = tkframe(window.ds.log)
 
-	xinput_ = tclVar( 'D$LAB_HDL' )
+	xinput_ = tclVar( 'variable_name' )
 	baseinput_ = tclVar( 'exp(1)' )
 	newobjinput_ = tclVar( 'new_obj' )
 

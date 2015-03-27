@@ -19,7 +19,7 @@ rt.ds.table1D = function(){
 	tkwm.title(window.ds.table1D,'ds.table1D()')
 	inputframe0 = tkframe(window.ds.table1D)
 
-	xinput_ = tclVar( 'D$LAB_HDL' )
+	xinput_ = tclVar( 'variable_name' )
 	rbvalue <- tclVar( 'combine' )
 
 	inputframe1 = tkframe(window.ds.table1D)

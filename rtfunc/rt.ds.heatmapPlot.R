@@ -20,8 +20,8 @@ rt.ds.heatmapPlot = function(){
 	tkwm.title(window.ds.heatmapPlot,'ds.heatmapPlot()')
 	inputframe0 = tkframe(window.ds.heatmapPlot)
 
-	xinput_ = tclVar( 'D$LAB_HDL' )
-	yinput_ = tclVar( 'D$LAB_TSC' )
+	xinput_ = tclVar( 'variable_name' )
+	yinput_ = tclVar( 'variable_name' )
 	rbvalue <- tclVar( 'combine' )
 
 	inputframe1 = tkframe(window.ds.heatmapPlot)

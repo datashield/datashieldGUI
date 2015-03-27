@@ -20,8 +20,8 @@ rt.ds.table2D = function(){
 	tkwm.title(window.ds.table2D,'ds.table2D()')
 	inputframe0 = tkframe(window.ds.table2D)
 
-	xinput_ = tclVar( 'D$LAB_HDL' )
-	yinput_ = tclVar( 'D$GENDER' )
+	xinput_ = tclVar( 'variable_name' )
+	yinput_ = tclVar( 'variable_name' )
 	rbvalue <- tclVar( 'combine' )
 
 	inputframe1 = tkframe(window.ds.table2D)

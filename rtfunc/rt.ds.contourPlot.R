@@ -20,8 +20,8 @@ rt.ds.contourPlot = function(){
 	tkwm.title(window.ds.contourPlot,'ds.contourPlot()')
 	inputframe0 = tkframe(window.ds.contourPlot)
 
-	xinput_ = tclVar( 'D$LAB_HDL' )
-	yinput_ = tclVar( 'D$LAB_TSC' )
+	xinput_ = tclVar( 'variable_name' )
+	yinput_ = tclVar( 'variable_name' )
 	rbvalue <- tclVar( 'combine' )
 
 	inputframe1 = tkframe(window.ds.contourPlot)
